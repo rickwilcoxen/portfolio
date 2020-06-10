@@ -31,7 +31,9 @@ const Home = () => {
         <Link to='/About'>
           <SolidButton>About Rick</SolidButton>
         </Link>
-        <SolidButton>Art Portfolio</SolidButton>
+        <Link to='/ArtPortfolio'>
+          <SolidButton>Art Portfolio</SolidButton>
+        </Link>
         <SolidButton>Software Dev</SolidButton>
       </div>
     </div>
