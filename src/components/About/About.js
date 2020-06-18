@@ -1,6 +1,8 @@
 import React from 'react'
-// import { Link } from 'react-router-dom'
-// import SolidButton from '../Shared/SolidButton'
+import { Link } from 'react-router-dom'
+import SolidButton from '../Shared/SolidButton'
+// import { Image } from 'react-router-dom'
+// import Gallery from 'react-grid-gallery'
 
 const About = () => {
   // const backgroundImageUrl = 'https://media.giphy.com/media/UYBDCJjwOd9Re/giphy.gif'
@@ -31,18 +33,21 @@ const About = () => {
         <p>I have lead a multifaceted life of different interests and careers. I have a BA in Arts Management, studio art, and art history, as well as have worked in non-profits. My desire of information and experiences brought me to computer science at a young age. As a child of engineers, I was raised to ask questions, explore, and create. Coupled with an artistic background, I make for a pretty well rounded individual. I love working with technology, art, and people, which initially brought me to a customer service position after college. Coming back to coding through a software bootcamp after getting my B.A. in Arts Management, Art and Art History, I rekindled my passion for it, easily convincing me I need to be a software engineer above all else.</p>
       </div>
       <div>
-        <h2>Skills</h2>
-        <ul>
-          <li>React</li>
-          <li>HTML/CSS/SASS/Handlebars</li>
-          <li>JavaScript</li>
-          <li>AWS s3</li>
-          <li>Mongodb</li>
-          <li>Postgresql</li>
-        </ul>
+        <h2>Languages</h2>
+        <div className='container' Style={{ flex: 1, flexDirection: 'row' }}>
+          <img src='https://images.vexels.com/media/users/3/166485/isolated/preview/d4061b653e6ba02ad0afdc79e0315a25-ruby-programming-language-icon-by-vexels.png' style={{ width: 50, height: 50 }} />
+        </div>
+        <h2>Front End</h2>
+        <div className='container' Style={{ flex: 1, flexDirection: 'row' }}>
+          <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png' style={{ width: 70 }} />
+        </div>
+        <h2>Backend, Databases, APIs, Tools and more</h2>
+        <div className='container' Style={{ flex: 1, flexDirection: 'row' }}>
+          <img src='https://i.ya-webdesign.com/images/amazon-s3-png-5.png' style={{ width: 90 }} />
+        </div>
       </div>
       <div>
-        <h2>Experience</h2>
+        <h2>Education</h2>
         <ul>
           <li>General Assembly Software Engineer Fellow</li>
           <li>BA in Arts Management, Art, Art History from MCLA 2019</li>
@@ -50,6 +55,10 @@ const About = () => {
       </div>
       <div>
         <h2>Resume</h2>
+        <a href='https://www.linkedin.com/in/rick-wilcoxen/'>LinkedIn</a>
+        <Link to='/About'>
+          <SolidButton>View Resume PDF</SolidButton>
+        </Link>
       </div>
     </div>
   )
