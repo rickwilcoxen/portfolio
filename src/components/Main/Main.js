@@ -3,16 +3,16 @@ import { Link } from 'react-router-dom'
 import SolidButton from '../Shared/SolidButton'
 
 const Home = () => {
-  const backgroundImageUrl = 'https://media.giphy.com/media/tBb19f3bR3ECInPavao/giphy.gif'
+  // const backgroundImageUrl = 'https://media.giphy.com/media/tBb19f3bR3ECInPavao/giphy.gif'
 
   const homeStyles = {
     /* Center the heading inside the container */
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-
     /* Set background image */
-    backgroundImage: `url(${backgroundImageUrl})`,
+    /* backgroundImage: `url(${backgroundImageUrl})`, */
+    backgroundColor: 'gray',
     /* Covers the entire width of the div */
     backgroundSize: 'repeat',
     /* Center the background */
@@ -25,7 +25,7 @@ const Home = () => {
     textAlign: 'center'
   }
   return (
-    <div className="container" style={homeStyles}>
+    <div style={homeStyles}>
       <div>
         <h1>RJW Portfolio</h1>
         <Link to='/About'>
