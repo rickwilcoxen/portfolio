@@ -44,7 +44,7 @@ class App extends Component {
             message={msgAlert.message}
           />
         ))}
-        <main className="container">
+        <main>
           <Route exact path='/' component={Home} />
           <Route exact path='/About' component={About} />
           <Route exact path='/ArtPortfolio' component={ArtPortfolio} />
